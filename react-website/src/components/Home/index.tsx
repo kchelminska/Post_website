@@ -1,5 +1,9 @@
+import './Home.scss';
+
 export const Home = () => {
     return(
-        <h1>Homepage!</h1>
+        <>
+            <h1>Homepage my project</h1>
+        </>
     )
 }

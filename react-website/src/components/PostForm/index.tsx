@@ -1,5 +1,8 @@
 export const PostForm = () => {
     return(
-        <h1>Post Form Page</h1>
+        <>
+            <h1>Post Form Page</h1>
+            
+        </>
     )
 }
