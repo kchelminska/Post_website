@@ -43,7 +43,9 @@ export const Post = () => {
             <p>{post.tags}</p>
             {post.tags.map}
             <h4>{post.reactions}</h4>
-            <Link to={'/posts/4'}>Tutaj</Link>
+            {/* <Link to={'/posts/4'}>Tutaj</Link> */}
+            <button>Edit</button>
+            <button>Delete</button>
         </>
     )
 }
