@@ -1,4 +1,19 @@
-.nav{
-    display: flex;
-    justify-content: space-around;
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 0.5);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
 }

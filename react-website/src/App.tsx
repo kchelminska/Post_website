@@ -9,7 +9,8 @@ import { Post } from './components/Post';
 import { Register } from './components/Registration';
 import { Login } from './components/Login';
 import { PostForm } from './components/PostForm';
-import { Navigation } from "./components/Navigation";
+import { Navigation} from "./components/Navigation";
+import { NotFound } from './components/NotFound';
 
 export type PostType = {
   id?: number;
@@ -51,8 +52,9 @@ function App() {
         <Route path="/posts" element={ <PostsList list={posts}/> } />
         <Route path="/posts/:id" element={<Post/>}/>
         <Route path="/posts/new" element={<PostForm />}/>
-        <Route path="/register" element={<Register />}/>
         <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
