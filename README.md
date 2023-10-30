@@ -1,43 +1,25 @@
-# React_sda_project
+# Post_website
 
-## Zadanie końcowe 
-Link do API - https://dummyjson.com/docs/posts
-Link do repo - https://github.com/szu-szy/wyk-13.05
+## Post Creation Application
+This application allows users to create, edit, and delete posts. The application uses the Firebase database to store posts and user data. The application is written in JavaScript and uses the React library to create the user interface.
 
-# Konfiguracja projektu
-- Stwórz puste repozytorium na github
-- Sklonuj je lokalnie za pomoca git clone
-- Stwórz w pobranym repozytorium pusty projekt React
-- komenda: npx create-react-app my-app --template typescript
-- po zainstalowaniu dodaj paczki:
-- node-sass
-- firebase
-- react-router-dom
+# Users
+To create a new user, use the registration form. The registration form is located in the /register view.
+To log in to the application, use the login form. The login form is located in the /login view.
 
-# Konfiguracja Firebase
-- stwórz nowy projekt wraz z aplikacją
-- dodaj plik do folderu src > firebaseConfig.ts
-- w komponencie App zainicjuj aplikacje:
-- const app = initializeApp(firebaseConfig);
+# Posts
+To create a new post, use the post creation form. The post creation form is located in the /posts/new view.
+To view a list of posts, navigate to the /posts view.
+To view a single post, click the "Check" link in the post.
 
-# Stwórz routing aplikacji (kazda strona ma inny header)
-- x homepage "/" 
-- x lista postów "/posts"
-- x strona pojedynczego posta "/posts/:id"
-- x strona do rejestracji użytkownika "/register"
-- x strona do logowania "/login"
-- x strona do formularza który tworzy nowy post "/posts/new"
+# Development
+The application is still under development. The following features are planned:
+• Post editing
+• Post deletion
+• User authorization
 
+# Support
+If you have any problems with the application, please contact the project author at chelminska.katarzyna@protonmail.com
 
-
-# Komponenty
-- App - zawiera liste postów i przekazuje ją nizej
-- Lista postów - wyswietla posty
-- Pojedyńczy post + formularz do edycji - wyswietla post i edytuje oraz usuwa
-- Formularz do stworzenia postu - tworzy nowy post
-- Formularz do logowania - loguje do firebase
-- Formularz do rejestracji - tworzy uzytkownika w firebase
-
-# Dodatkowe uwagi
-- logika wydziela w hookach
-- lekkie wystylowanie wszystkich komponentów
+# Additional information
+The application uses the Firebase database to store posts and user data. It also uses the React library to create the user interface.
